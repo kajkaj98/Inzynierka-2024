@@ -1,0 +1,7 @@
+Modele zawarte w aplikacji:
+- pt_p1.pth (pre-trained ResNet50, wykorzysujący 1. podejście do przetwarzania danych)
+- pt_p2.pth (pre-trained ResNet50, wykorzysujący 2. podejście do przetwarzania danych)
+- p3_final.pth (model wykorzystany w pierwszym etapie podejścia dwuetapowego)
+- random_forest_final.joblib (model wykorzystany w drugim etapie podejścia dwuetapowego)
+
+Modele są dostępne do pobrania pod linkiem https://drive.google.com/drive/folders/1ji9YpIa0yzeQwjyHf0pUWLq_-ZIbavI2
