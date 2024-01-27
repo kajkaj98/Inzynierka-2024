@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h1>Uwzględnione ruchy malarskie</h1>
+    <br>
+
+
+    <div class="text-style">
+        Witaj w zakładce poświęconej klasyfikatorowi stylów artystycznych. Nasz klasyfikator,  został wytrenowany, aby rozpoznawać różne style w dziełach sztuki. Wśród rozpoznawanych stylów znajduje się 18 unikalnych kategorii, reprezentujących różne epoki, ruchy artystyczne i techniki. Na tej stronie dowiesz się, jakie cechy charakteryzują każdy z tych stylów.
+    </div>
+
+    <br>
+    <h2>Lista klasyfikowanych stylów:</h2>
+    <br>
+
+
+    <a class="link" href="byzantin_iconography"><h2>1. Ikona bizantyjska</h2></a>
+    <br>
+    <div class="row">
+      <div class="column">
+          <img src="{% static 'images/madonnalead.jpg' %}" alt="team logo">
+      </div>
+      <div class="column-text">
+          Sztuka sakralna pochodząca głównie z chrześcijańskiego Wschodu, charakteryzująca się płaskością, złożonymi kompozycjami i intensywnym użyciem złota.
+      </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="early_renaissance"><h2>2. Renesans</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/venus-and-mars1.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Okres renesansu we Włoszech, cechujący się powrotem do klasycznych wzorców, perspektywą, proporcją i zainteresowaniem człowiekiem jako źródłem inspiracji.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="northern_renaissance"><h2>3. Neorenesans</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/tuke.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Styl renesansu rozwijający się w krajach północnych Europy, z naciskiem na detale, realizm, precyzję i tematykę religijną.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="high_renaissance"><h2>4. Wysoki renesans</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/mona-lisa.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Okres renesansu we Włoszech, obejmujący twórczość artystów takich jak Leonardo da Vinci, Michał Anioł i Rafael, charakteryzujący się doskonałością w formie, harmonią i równowagą.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="baroque"><h2>5. Barok</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/9801.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Okres artystyczny charakteryzujący się przepychem, dramatyczną ekspresją, dynamicznymi kompozycjami i stosowaniem kontrastów światłocieniowych.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="rococo"><h2>6. Rokoko</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/9178.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Styl artystyczny z XVIII wieku, cechujący się elegancją, lekkością, delikatnością i zainteresowaniem tematyką mitologiczną oraz bujnymi zdobieniami.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="romantism"><h2>7. Romantyzm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/6838.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Okres artystyczny podkreślający emocje, indywidualizm, zainteresowanie naturą, egzotyką i tematyką historyczną.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="realism"><h2>8. Realizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/visit-of-the-unhealthy-teacher.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Ruch artystyczny, który akcentuje przedstawianie rzeczywistości w sposób możliwie dokładny, bez idealizacji.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="impressionism"><h2>9. Impresionizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/water-lily-pond-1.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Styl malarski, który kładzie nacisk na chwilowe wrażenia, światło, kolor i swobodę w malowaniu.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="post_impressionism"><h2>10. Postimpresionizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/Van_Gogh_Vincent_Sunflowers_1888970.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Rozwinięcie impresjonizmu z bardziej indywidualnymi wyrażeniami artystów, eksperymentami z formą i kolorystyką.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="expressionism"><h2>11. Ekspresionizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/women-on-the-bridge.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Styl artystyczny wyrażający emocje, zniekształcone formy, jaskrawe kolory i eksperymenty z techniką.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="symbolism"><h2>12. Symbolizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/undine.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Ruch artystyczny, który używa symboli, mitologii i abstrakcji do wyrażania głębokich uczuć i myśli.
+        </div>
+    </div>
+    <br>
+
+
+     <a class="link" href="fauvism"><h2>13. Fowizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/Marquet_pons-charente-maritime-1901.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Styl malarski z początku XX wieku, charakteryzujący się jaskrawymi kolorami, śmiałym pociągnięciem pędzla i eksperymentami z formą.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="cubism"><h2>14. Kubizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/vista-de-saint-paul-de-vence-1910.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Styl, który dekonstruuje przedstawiane obiekty na fragmenty geometryczne, przestawiający różne punkty widzenia jednocześnie.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="surrealism"><h2>15. Surrealizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/woman-in-a-straw-hat-1936.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Ruch artystyczny, który eksploruje nieświadomość, marzenia sennem, absurdyzm i surrealistyczne kompozycje.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="abstract_art"><h2>16. Abstrakcja</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/vrouw-met-koe-woman-with-cow-1918.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Forma sztuki, która odrzuca przedstawianie rzeczywistości, skupiając się na formie, kształcie, kolorze i abstrakcji.
+        </div>
+    </div>
+    <br>
+
+
+    <a class="link" href="naive_art"><h2>17. Prymitywizm</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/window-over-a-garden.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Sztuka stworzona przez artystów bez formalnego szkolenia, charakteryzująca się prostotą, naiwnością i spontanicznością.
+        </div>
+    </div>
+    <br>
+
+    <a class="link" href="pop_art"><h2>18. Pop Art</h2></a>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'images/the-new-spirit-donald-duck.jpg' %}" alt="team logo">
+        </div>
+        <div class="column-text">
+            Ruch artystyczny z lat 50. i 60. XX wieku, który wykorzystuje motywy z kultury masowej, reklamy i codziennego życia.
+        </div>
+    </div>
+    <br>
+
+    
+{% endblock content %}

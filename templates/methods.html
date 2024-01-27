@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h2>Modele wykorzystane do klasyfikacji ruchów malarskich</h2>
+
+    <br>
+    W celu skutecznego rozpoznawania stylów malarskich, zdecydowaliśmy się na wykorzystanie głębokich sieci neuronowych, a konkretnie architektury ResNet50, znanej ze swojej zdolności
+    <br>
+    do przetwarzania informacji w złożonych strukturach obrazów. Modele te zostały poddane procesowi transfer learningu, wykorzystując wiedzę zdobytą na znanych danych z ImageNet.
+    <br>
+    Proces ten umożliwił nam adaptację sieci do specyfiki stylów malarskich.
+    <br>
+    Poniżej znajduje się opis modeli zawartych w aplikacji, wraz z macierzami błędów dla każdego podejścia.
+    <br>
+    Wiecej informacji znajduje się na repozytorium, do którego link dotępny jest w zakładce <a class="link" href="about"><b>Opis Pracy</b></a>
+
+    <h2>Model 1</h2>
+
+    <h3>ResNet50 z Transfer Learningiem - podejście 1 do przetwarzania danych</h3>
+
+    Pierwsze podejście zakładało podział obrazów na kwadratowe segmenty, a następnie przeskalowywanie ich do formatu, w którym krótszy bok wynosił 224 piksele.
+    <br>
+    Model ten był inicjalizowany stanem wytrenowanym na danych z ImageNet, co pozwalało na efektywne wykorzystanie już istniejącej wiedzy.
+    <br>
+
+    <br>
+    <img src="{% static 'images/model1.jpg' %}" alt="team logo" style="width: 700px; height: 500px;">
+    <br>
+
+    <h2>Model 2</h2>
+
+    <h3>ResNet50 z Transfer Learningiem (Podejście 2)</h3>
+
+    Drugie podejście różniło się w przetwarzaniu danych, polegającym na wypełnieniu obrazów czarnym tłem, aby uzyskać kwadratowy kształt.
+    <br>
+    Ponownie, model ten korzystał z transfer learningu na bazie ImageNet.
+    <br>
+
+    <br>
+    <img src="{% static 'images/model2.jpg' %}" alt="team logo" style="width: 700px; height: 500px;">
+    <br>
+
+    <h2>Model 3</h2>
+
+    <h3>Dwuetapowy Model z wykorzystaniem sieci ResNet50 oraz lasu losowego</h3>
+
+    Trzeci model składał się z dwóch etapów. Pierwszy etap obejmował trening sieci neuronowej na fragmentach zdjęć, a następnie przekazywanie uzyskanego wektora prawdopodobieństw
+    <br>
+    do drugiego etapu, gdzie następował trening klasyfikatora. To podejście miało na celu lepsze skupienie się na lokalnych cechach zdjęć.
+    <br>
+
+    <br>
+    <img src="{% static 'images/model3.jpg' %}" alt="team logo" style="width: 700px; height: 500px;">
+    <br>
+
+{% endblock content %}

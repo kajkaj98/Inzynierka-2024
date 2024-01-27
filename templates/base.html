@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasyfikator stylów malarskich</title>
+    <link rel='stylesheet' href='{% static 'style.css' %}' type='text/css'>
+
+</head>
+
+<body>
+    <header>
+        <a class="site-name" href="/" target="_self">Narzędzie do rozpoznawania stylów malarskich <br>
+            z wykorzystaniem uczenia głębokiego</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a class="link" href="/" target="_self">Narzędzie</a> </li>
+            <li> <a class="link" href="/methods" target="_self">Modele</a> </li>
+            <li> <a class="link" href="/styles" target="_self">Ruchy malarskie</a> </li>
+            <li> <a class="link" href="/about" target="_self">Opis pracy</a> </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <div class="main-content-class">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </article>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<body>
+    <br>
+    <form method="post" enctype="multipart/form-data" action="predictImage" onsubmit="return zapiszPlik()">
+    {% csrf_token %}
+    <div class="col-md-4 col-sm-4">
+        <label for="fname">Załaduj: </label> <input id="button-13" name="filePath" type="file" >
+        <br>
+        <br>
+
+        <label>Podaj nazwę pliku: </label><input type="text" id="button-13" name="fileName">
+
+
+        <label for="models">Wybierz model:</label>
+            <select id="button-13" name="models">
+                <option value="" disabled selected hidden> </option>
+                <option value="model1">model1</option>
+                <option value="model2">model2</option>
+                <option value="model3">model3</option>
+            </select>
+        <br>
+        <br>
+        <input type="submit" value="Zatwierdź" id="button-13"></div>
+
+
+        <h2>Rozpoznany styl dla pliku <em>{{ filename }}</em>: <a class="link" href={{ link }}> {{ predictedLabel }} </a> {{ prob }}</h2>
+        <div class="my-image">
+            <img src={{ filePathName }} alt="imagename">
+        </div>
+
+    </form>
+
+    <script>
+        function zapiszPlik() {
+            var fileInput = document.getElementById('button-13');
+
+            if (fileInput.files.length > 0) {
+                var file = fileInput.files[0];
+
+                var img = new Image();
+
+                img.onload = function() {
+                    if (img.width < 336 || img.height < 336) {
+
+                        alert('Rozmiar obrazu musi wynosić co najmniej 336x336 pikseli.');
+                        window.location.href = 'http://127.0.0.1:8000/';
+                    } else {
+
+                        return true;
+                    }
+                };
+
+                img.src = URL.createObjectURL(file);
+            }
+
+            return true;
+        }
+    </script>
+
+
+
+</body>
+{% endblock content %}

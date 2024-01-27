@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h2>Obrazy zakwalifikowane do stylu: Symbolizm</h2>
+        <div style="display: flex; flex-wrap: wrap;">
+
+        {% if files %}
+            {% for file in files %}
+                <div style="margin: 10px; text-align: center; width: 23%;">
+                    <p>{{ file.1 }}</p>
+                    <img src="{{ file.0 }}" alt="image">
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Brak obrazów w bazie zakwalifikowanych do tego stylu.</p>
+        {% endif %}
+
+    </div>
+
+
+{% endblock content %}
